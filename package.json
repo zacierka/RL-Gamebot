@@ -1,0 +1,25 @@
+{
+  "name": "rl-gamebot",
+  "version": "1.0.0",
+  "description": "Twitch rocket league bot",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zacierka/RL-Gamebot.git"
+  },
+  "author": "Mike",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zacierka/RL-Gamebot/issues"
+  },
+  "homepage": "https://github.com/zacierka/RL-Gamebot#readme",
+  "devDependencies": {
+    "electron": "^4.0.1"
+  },
+  "dependencies": {
+    "electron-reload": "^1.4.0"
+  }
+}

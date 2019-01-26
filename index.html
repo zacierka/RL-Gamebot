@@ -1,0 +1,80 @@
+<html>
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RLTwitch</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="./assets/javascript/renderer.js"></script>
+    <script src="./assets/javascript/queue.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+    <div class="logo">
+            <img src="./assets/imgs/octane.png">
+    </div>
+    <header id="titlebar">
+        <div id="drag-region">
+            <div id="window-title">
+                <span>RL Twitch</span>
+            </div>
+            <div id="window-controls">
+                <div class="button" id="min-button">
+                    <span>&#xE921;</span>
+                </div>
+                <div class="button" id="max-button">
+                    <span>&#xE922;</span>
+                </div>
+                <div class="button" id="restore-button">
+                    <span>&#xE923;</span>
+                </div>
+                <div class="button" id="close-button">
+                    <span>&#xE8BB;</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="main">
+        <div class="mode">
+            <p>MODE</p>
+            <label>
+                <input type="radio" name="radio">
+                <span>SUBSCRIBERS</span>
+            </label>
+                      
+            <label>
+                <input type="radio" name="radio">
+                <span>FOLLOWERS</span>
+            </label>
+        </div>
+        <div id="queue-list">
+            <p>Queue</p>
+            <ul id="queue"></ul>
+        </div>
+        <div id="scoreboard">
+            <img src="assets/imgs/scoreboard.png">
+        </div>
+        <div id="controls">
+            <div id="qcontrol">
+                <button>NEXT</button>
+                <button>SKIP</button>
+                <div id="endgame">
+                        <button>END</button>
+                </div>
+            </div>
+            
+
+        </div>
+        <div class="arrow bounce">
+                <a class="fa fa-arrow-down fa-2x" href="#settings"></a>
+        </div>
+        <div id="settings">
+
+        </div>
+    </div>
+    <script>
+        require('assets/javascript/renderer.js');
+    </script>
+</body>
+</html>
