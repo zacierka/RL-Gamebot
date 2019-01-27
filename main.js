@@ -11,6 +11,11 @@ function createWindow() {
         width: 480,
         height: 640,
         frame: false,
+        show: false,
+        maxHeight: 640,
+        maxWidth: 480,
+        minHeight:450,
+        minWidth: 480,
         webPreferences: {
             nodeIntegration: true
           }
@@ -20,7 +25,9 @@ function createWindow() {
         protocol: 'file',
         slashes: true
     }));
-    win.webContents.openDevTools();
+    win.once('ready-to-show', () => {
+        win.show()
+    });
     win.on('closed', () => {
         win = null;
     });

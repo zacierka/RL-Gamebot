@@ -201,7 +201,11 @@ p {
     animation: bounce 2s infinite;
 }
 
-
+@media only screen and (max-height: 450px) {
+    #scoreboard {
+        display: none;
+    }
+  }
 
 #settings {
     height: 80px;
