@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <meta charset="UFT-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,13 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <script src="./assets/javascript/renderer.js"></script>
     <script src="./assets/javascript/queue.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
 </head>
+
 <body>
     <div class="logo">
-            <img src="./assets/imgs/octane.png">
+        <img src="./assets/imgs/octane.png">
     </div>
     <header id="titlebar">
         <div id="drag-region">
@@ -34,47 +37,62 @@
             </div>
         </div>
     </header>
-
     <div id="main">
-        <div class="mode">
-            <p>MODE</p>
-            <label>
-                <input type="radio" name="radio">
-                <span>SUBSCRIBERS</span>
-            </label>
-                      
-            <label>
-                <input type="radio" name="radio">
-                <span>FOLLOWERS</span>
-            </label>
-        </div>
-        <div id="queue-list">
-            <p>Queue</p>
-            <ul id="queue"></ul>
-        </div>
-        <div id="scoreboard">
-            <img src="assets/imgs/scoreboard.png">
-        </div>
-        <div id="controls">
-            <div id="qcontrol">
-                <button>NEXT</button>
-                <button>SKIP</button>
-                <div id="endgame">
-                        <button>END</button>
-                </div>
-            </div>
-            
+        <div id="content">
+            <div class="mode">
+                <p>MODE</p>
+                <label>
+                    <input type="radio" name="radio">
+                    <span>SUBSCRIBERS</span>
+                </label>
 
-        </div>
-        <div class="arrow bounce">
+                <label>
+                    <input type="radio" name="radio">
+                    <span>FOLLOWERS</span>
+                </label>
+            </div>
+            <div id="queue-list">
+                <p>Queue</p>
+                <ul id="queue"></ul>
+            </div>
+            <div id="scoreboard">
+                <img src="assets/imgs/scoreboard.png">
+            </div>
+            <div id="controls">
+                <div id="qcontrol">
+                    <button>NEXT</button>
+                    <button>SKIP</button>
+                    <div id="endgame">
+                        <button>END</button>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="arrow bounce">
                 <a class="fa fa-arrow-down fa-2x" href="#settings"></a>
+            </div>
         </div>
         <div id="settings">
-
+            <span id="settings_tab">Settings</span>
+            <div class="selection">
+                <input type="checkbox" checked> Moderator Control<br>
+                <p>Allow moderators to <span id="keywords">NEXT</span> and <span id="keywords">SKIP</span> games</p>
+            </div>
+            <div class="selection">
+                    <input type="checkbox"> Queue Limit<br>
+                    <p>Set the queue limit: <input type="text" maxlength="3"></p>
+                </div>
         </div>
+        <div id="footer">
+                Created and Designed by <span id="switch" onclick="discord()">Switch</span>
+        </div>
+
     </div>
+
     <script>
         require('assets/javascript/renderer.js');
     </script>
 </body>
+
 </html>

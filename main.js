@@ -28,6 +28,7 @@ function createWindow() {
     win.once('ready-to-show', () => {
         win.show()
     });
+    win.openDevTools({detached: true});
     win.on('closed', () => {
         win = null;
     });
