@@ -160,6 +160,10 @@ body {
   list-style-type: none;
 }
 
+#queue-list li {
+    font-size: 25px;
+}
+
 #scoreboard img{
     width: 331px;
     height: 80px;
