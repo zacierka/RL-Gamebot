@@ -14,7 +14,9 @@
 
 <body>
     <div class="logo">
-        <img src="./assets/imgs/octane.png">
+        <a href="#content">
+            <img src="./assets/imgs/octane.png">
+        </a>
     </div>
     <header id="titlebar">
         <div id="drag-region">
@@ -80,9 +82,14 @@
                 <p>Allow moderators to <span id="keywords">NEXT</span> and <span id="keywords">SKIP</span> games</p>
             </div>
             <div class="selection">
-                    <input type="checkbox"> Queue Limit<br>
-                    <p>Set the queue limit: <input type="text" maxlength="3"></p>
-                </div>
+                <input type="checkbox"> Queue Limit<br>
+                <p>Set the queue limit: <input type="text" width="25" maxlength="3"></p>
+            </div>
+            <div class="selection">
+                Channel<br>
+                <p>Set the channel name: <input type="text" maxlength="22"></p>
+                <p><button id="button-join">join</button></p>
+            </div>
         </div>
         <div id="footer">
                 Created and Designed by <span id="switch" onclick="discord()">Switch</span>
@@ -91,7 +98,7 @@
     </div>
 
     <script>
-        require('assets/javascript/renderer.js');
+        require('./assets/javascript/renderer.js');
     </script>
 </body>
 

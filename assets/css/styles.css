@@ -107,6 +107,9 @@ body {
 #window-controls #max-button, #window-controls #restore-button {
     grid-column: 2;
 }
+#max-button {
+    visibility: hidden;
+}
 #window-controls #close-button {
     grid-column: 3;
 }
@@ -235,7 +238,7 @@ body {
     margin-left: 33px;
 }
 
-.selection input[type=text] {
+.selection #limit {
     width: 25px;
 }
 
@@ -247,6 +250,13 @@ body {
 #keywords {
     font-family: GoGoPosterPunch;
     letter-spacing: 2px;
+}
+#button-join {
+    font-family: GoGoPosterPunch;
+    color: white;
+    letter-spacing: 2px;
+    background-color: #2F313C;
+    border-radius: 17px;
 }
 
 #footer {
