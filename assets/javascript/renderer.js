@@ -2,7 +2,7 @@
 // be executed in the renderer process for that window.
 // All of the Node.js APIs are available in this process.
 const remote = require('electron').remote;
-const shell = require('electron').shell;
+ const shell = require('electron').shell;
 
 (function handleWindowControls() {
     // When document has loaded, initialise
