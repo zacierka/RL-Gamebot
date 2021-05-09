@@ -8,7 +8,7 @@ What is programmed is just the minimize, maximize, and close buttons.
 
 
 ### Eventually
-This project's updates are slow due to school. This will be a weekend project/ whenever i have time for it project.
+Gave Up on this...
 
 Current: 
 ![Current](https://i.imgur.com/rZvamAq.png)
